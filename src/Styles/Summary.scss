@@ -1,0 +1,16 @@
+.links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile {
+  margin-top: 2em;
+}
+
+.description p:nth-child(1) {
+  line-height: 0;
+}
+
+.description p:nth-child(2) {
+  line-height: 0;
+}
