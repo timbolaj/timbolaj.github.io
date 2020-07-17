@@ -1,3 +1,20 @@
+.Summary h4 {
+  animation-name: title;
+  animation-duration: 1.5s;
+}
+
 .Summary p {
   text-align: justify;
+  animation-name: text;
+  animation-duration: 2s;
+}
+
+@keyframes title {
+  0% {opacity: 0;}
+  100% {opacity: 100;}
+}
+
+@keyframes text {
+  0% {opacity: 0;}
+  100% {opacity: 100;}
 }

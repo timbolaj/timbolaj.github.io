@@ -46,7 +46,13 @@ export default function Skills() {
           <p>Pair programming</p>
           <p>Team-player</p>
           <p>Bilingual</p>
-        </div>  
+        </div>
+
+        <div className="acquiring">
+          <h5>Acquiring</h5>
+          <p>Python</p>
+          <p>Django</p>
+        </div>
       </div>
     
     </div>
