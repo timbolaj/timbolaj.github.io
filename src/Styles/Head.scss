@@ -1,10 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,700;1,700&display=swap");
+
 .Head {
   margin: 0px;
   height: 100vh;
+  background-color: #a68500;
+  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
 }
 
 .links {
   display: flex;
   justify-content: flex-end;
-  color: black;
+  color: white;
+  padding-top: 1em;
+  padding-right: 2em;
+}
+
+.links a:nth-child(1) {
+  color: white;
+  margin-right: 1em;
+}
+
+.links a:nth-child(2) {
+  color: white;
+}
+
+.Introduction-text {
+  padding-left: 2em;
+  padding-top: 3em;
+  font-family: 'Archivo', sans-serif;
+  font-size: 3em;
+}
+
+.name {
+  display: flex;
+  color: white;
+  line-height: 2;
+  animation-name: name-text;
+  animation-duration: 1.5s;
+}
+
+.description p:nth-child(1) {
+  display: flex;
+  line-height: 1;
+  color: white;
+  animation-name: description-one;
+  animation-duration: 2s;
+}
+
+.description p:nth-child(2) {
+  display: flex;
+  line-height: 0.5;
+  color: white;
+  animation-name: description-two;
+  animation-duration: 3.45s;
+}
+
+@keyframes name-text {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes description-one {
+  0% {opacity: 0;}
+  75% {opacity: 0}
+  100% {opacity: 1;}
+}
+
+@keyframes description-two {
+  0% {opacity: 0;}
+  90% {opacity: 0}
+  95% {opacity: 0.5;}
+  100% {opacity: 1;}
 }
