@@ -12,6 +12,8 @@ export default function Skills() {
           <p>jQuery</p>
           <p>HTML</p>
           <p>CSS/Sass</p>
+          <p>Bootstrap</p>
+          <p>Material-UI</p>
         </div>
 
         <div className="back-end">
@@ -48,6 +50,5 @@ export default function Skills() {
       </div>
     
     </div>
-
   )
 }

@@ -11,7 +11,7 @@ const SKILLS = 'Skills';
 
 export default function Profile() {
 
-  const [mode, setMode] = useState(SKILLS);
+  const [mode, setMode] = useState(SUMMARY);
 
   return (
     <div className="profile d-flex justify-content-center vertical-center">
@@ -38,6 +38,8 @@ export default function Profile() {
           >
             Summary
           </Button>
+
+          &nbsp;
 
           <Button
             variant="contained"
