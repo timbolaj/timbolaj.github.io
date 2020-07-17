@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
 import '../Styles/Projects.scss';
-
-const PATHFINDER = 'pathfinder';
-const MAPBOOK = 'mapbook';
-const SCHEDULER = 'scheduler';
-const TWEETER = 'tweeter';
-const JUNGLE = 'jungle';
-const TINYAPP = 'tinyapp';
+import Pathfinder from './Projects/coding-projects/Pathfinder';
+import Mapbook from './Projects/coding-projects/Mapbook';
+import Scheduler from './Projects/coding-projects/Scheduler';
+import Tweeter from './Projects/coding-projects/Tweeter';
 
 export default function Projects() {
   return (
@@ -14,10 +11,11 @@ export default function Projects() {
       <h4>Coding Projects</h4>
 
       <div className="websites">
-        <div>Pathfinder</div>
-        <div>Mapbook</div>
-        <div>Scheduler</div>
-        <div>Tweeter</div>
+        <Pathfinder />
+        <Mapbook />
+        <Scheduler />
+        <Tweeter />
+
       </div>
       <br></br>
 
