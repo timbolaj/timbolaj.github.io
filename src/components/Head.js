@@ -20,7 +20,7 @@ export default function Head() {
 
         <div className="description">
           <p>I'm a political science graduate turned software developer.</p>
-          <p>I love languages, both human and machine.</p>
+          <p>I love languages, both human and computer.</p>
         </div>
       </div>
     </div>
