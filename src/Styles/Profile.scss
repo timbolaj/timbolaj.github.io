@@ -1,9 +1,15 @@
-.summary {
+.profile {
   height: 100vh;
-  padding-top: 5em;
+  padding-top: 3em;
 }
 
 .jumbotron {
   width: 40%;
   margin-left: 3em;
+}
+
+.modes {
+  display: flex;
+  justify-content: center;
+  padding-top: 4.5em;
 }
