@@ -1,0 +1,17 @@
+.upper-half, .bottom-half {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 4em;
+}
+
+.bottom-half {
+  padding-bottom: 0em;
+}
+
+.front-end, .back-end, .testing, .programming-languages, .soft-skills {
+  line-height: 0.5;
+}
+
+h5 {
+  line-height: 2;
+}

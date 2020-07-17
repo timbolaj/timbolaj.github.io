@@ -3,6 +3,7 @@ import picture from '../images/profile_pic.jpg';
 import '../Styles/Profile.scss';
 import 'bootstrap/dist/css/bootstrap.css';
 import Summary from './Profile-components/Summary';
+import Skills from './Profile-components/Skills';
 import Button from '@material-ui/core/Button';
 
 const SUMMARY = 'Summary';
@@ -10,7 +11,7 @@ const SKILLS = 'Skills';
 
 export default function Profile() {
 
-  const [mode, setMode] = useState('Summary');
+  const [mode, setMode] = useState(SKILLS);
 
   return (
     <div className="profile d-flex justify-content-center vertical-center">
@@ -24,7 +25,8 @@ export default function Profile() {
       <div className="jumbotron">
 
         <div className="profile-components">
-          {mode === 'Summary' && <Summary />}
+          {mode === SUMMARY && <Summary />}
+          {mode === SKILLS && <Skills /> }
         </div>
    
         <div className="modes">
