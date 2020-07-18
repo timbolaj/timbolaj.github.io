@@ -14,7 +14,7 @@ export default function Pathfinder() {
         </p>
       </div>
 
-      <p>Technologies: React, Material-UI, CSS, Rails, JavaScript, Axios</p>
+      <p>Tech stack: React, Material-UI, CSS, Rails, JavaScript, Axios</p>
 
     </div>
   )

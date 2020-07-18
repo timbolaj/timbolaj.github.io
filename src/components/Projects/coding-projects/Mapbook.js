@@ -16,7 +16,7 @@ export default function Mapbook() {
         </p>
       </div>
 
-      <p>Technologies: Google Maps API, Google Places API, jQuery, JavaScript, Express, Sass, HTML, Ajax</p>
+      <p>Tech stack: Google Maps API, Google Places API, jQuery, JavaScript, Express, Sass, HTML, Ajax</p>
 
     </div>
   )
