@@ -2,9 +2,19 @@ import React from 'react';
 
 export default function Mapbook() {
   return (
-    <div>
-      Gif
-       Description
+    <div className="project">
+      <div>
+        Gif        
+      </div>
+
+      <div className="description">
+        <p>
+          A web application which allows users to create and favorite maps. Each map is occupied with the locations
+          of the user's choosing
+        </p>
+        <p>Technologies: Google Maps API, Google Places API, jQuery, JavaScript, Express, Sass, HTML</p>
+      </div>
+
     </div>
   )
 }
