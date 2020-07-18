@@ -12,7 +12,7 @@
   flex-direction: column;
   width: 80%;
   margin-left: 3em;
-  height: 600px
+  height: 80%;
 }
 
 .modes {
@@ -53,4 +53,8 @@
   }
 }
 
-
+@media only screen and (min-height:632px) {
+  .jumbotron {
+    height: 80%
+  }
+}
