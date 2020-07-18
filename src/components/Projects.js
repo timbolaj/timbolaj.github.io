@@ -5,6 +5,7 @@ import Mapbook from './Projects/coding-projects/Mapbook';
 import Scheduler from './Projects/coding-projects/Scheduler';
 
 export default function Projects() {
+
   return (
     <div className="Projects">
       <h4>Coding Projects</h4>
