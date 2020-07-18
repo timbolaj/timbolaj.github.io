@@ -27,7 +27,6 @@ export default function Profile() {
         <div className="profile-components">
           {mode === SUMMARY && <Summary />}
           {mode === SKILLS && <Skills /> }
-        </div>
    
         <div className="modes">
           <Button
@@ -50,6 +49,7 @@ export default function Profile() {
             Skills
           </Button>
 
+          </div>
         </div>
 
       </div>
