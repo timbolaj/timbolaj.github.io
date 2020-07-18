@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../../Styles/Project-styles/coding-project-styles/project.scss'
 
 export default function Scheduler() {
   return (
