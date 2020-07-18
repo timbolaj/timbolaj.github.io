@@ -53,6 +53,10 @@
   display: none;
 }
 
+.description p:nth-child(3) {
+  display: none;
+}
+
 @keyframes name-text {
   0% {opacity: 0;}
   100% {opacity: 1;}
@@ -71,8 +75,18 @@
   100% {opacity: 1;}
 }
 
-@media only screen and (min-width:1350px) {
+@media only screen and (min-width:650px) {
   .description p:nth-child(2) {
+    display: flex;
+    line-height: 0.5;
+    color: white;
+    animation-name: description-two;
+    animation-duration: 2s;    
+  }
+}
+
+@media only screen and (min-width:1140px) {
+  .description p:nth-child(3) {
     display: flex;
     line-height: 0.5;
     color: white;
@@ -80,11 +94,21 @@
     animation-duration: 3.45s;
   }
 
+  .description p:nth-child(2) {
+    line-height: 1;
+  }
+}
+
+@media only screen and (min-width:1350px) {
   .description p:nth-child(1){
     display: flex;
     line-height: 1;
     color: white;
     animation-name: description-one;
     animation-duration: 2s;    
+  }
+
+  .description p:nth-child(2) {
+    display: none;
   }
 }
