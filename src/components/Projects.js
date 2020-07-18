@@ -3,7 +3,6 @@ import '../Styles/Projects.scss';
 import Pathfinder from './Projects/coding-projects/Pathfinder';
 import Mapbook from './Projects/coding-projects/Mapbook';
 import Scheduler from './Projects/coding-projects/Scheduler';
-import Tweeter from './Projects/coding-projects/Tweeter';
 
 export default function Projects() {
   return (
@@ -14,8 +13,6 @@ export default function Projects() {
         <Pathfinder />
         <Mapbook />
         <Scheduler />
-        <Tweeter />
-
       </div>
       <br></br>
 
