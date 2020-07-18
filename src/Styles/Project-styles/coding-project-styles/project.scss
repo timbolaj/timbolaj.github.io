@@ -1,7 +1,12 @@
 .project {
   width: 15em;
+  display: flex;
+  text-align: justify;
+  flex-direction: column;
+  align-content: flex-start;
 }
 
 .project-description {
-  text-align: justify;
+  height: 170px;
+  margin-bottom: 2em;
 }

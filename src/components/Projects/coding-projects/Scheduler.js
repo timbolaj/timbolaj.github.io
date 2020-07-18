@@ -8,11 +8,14 @@ export default function Scheduler() {
         Gif        
       </div>
 
-      <div className="description">
+      <div className="project-description">
         <p>
           A scheduling app which allows users to create, modify and delete appointments. Using websockets,
           users can see, in real-time, changes in the schedule
         </p>
+      </div>
+
+      <div className="tech-stack">
         <p>Technologies: React, JavaScript, Express</p>
       </div>
 

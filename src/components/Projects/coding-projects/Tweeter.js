@@ -8,13 +8,13 @@ export default function Tweeter() {
         Gif        
       </div>
 
-      <div className="description">
+      <div className="project-description">
         <p>
           A twitter clone created with responsive-design elements
         </p>
-        <p>Technologies: JavaScript, Express, jQuery, CSS, HTML</p>
       </div>
 
+      <p>Technologies: JavaScript, Express, jQuery, CSS, HTML</p>
     </div>
   )
 }
