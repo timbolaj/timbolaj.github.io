@@ -13,7 +13,7 @@ export default function Pathfinder() {
           the algorithm's search for the end node from the start node. Users can also add obstacles on the map such as
           user-drawn walls and weights, pre-made map, a randomly generated maze or a detour (intermediate node)
         </p>
-        <p>Technologies: React, Material-UI, CSS, Rails</p>
+        <p>Technologies: React, Material-UI, CSS, Rails, JavaScript</p>
       </div>
 
     </div>
