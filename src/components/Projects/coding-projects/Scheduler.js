@@ -16,7 +16,7 @@ export default function Scheduler() {
       </div>
 
       <div className="tech-stack">
-        <p>Technologies: React, JavaScript, Express</p>
+        <p>Technologies: React, JavaScript, Express, Axios, Websockets</p>
       </div>
 
     </div>
