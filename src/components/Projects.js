@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import '../Styles/Projects.scss';
-import { faCir } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCircle } from '@fortawesome/free-solid-svg-icons'
+import { faCircle as circle } from '@fortawesome/free-regular-svg-icons'
 import Pathfinder from './Projects/coding-projects/Pathfinder';
 import Mapbook from './Projects/coding-projects/Mapbook';
 import Scheduler from './Projects/coding-projects/Scheduler';
@@ -14,12 +16,12 @@ export default function Projects() {
 
   const [projectMode, setProject] = useState(PATHFINDER)
 
-  useEffect(() => {
-    clearInterval();
-    setInterval(slideshow, 10000);
-  })
+  // useEffect(() => {
+  //   setInterval(slideshow, 10000);
+  // })
 
   const slideshow = () => {
+    clearInterval();
     switch (projectMode) {
       case PATHFINDER:
         setProject(MAPBOOK);
@@ -43,7 +45,34 @@ export default function Projects() {
         {projectMode === SCHEDULER && <Scheduler />}
       </div>
 
-      <div>Toggle bar</div>
+      <div>
+
+        {projectMode === PATHFINDER && 
+          <div>
+            <FontAwesomeIcon icon={faCircle} />
+            <FontAwesomeIcon icon={circle} />  
+            <FontAwesomeIcon icon={circle} />  
+          </div>
+        }
+        
+        {projectMode === MAPBOOK && 
+          <div>
+            <FontAwesomeIcon icon={circle} />  
+            <FontAwesomeIcon icon={faCircle} />
+            <FontAwesomeIcon icon={circle} />  
+          </div>
+        }
+
+        {projectMode === SCHEDULER && 
+          <div>
+            <FontAwesomeIcon icon={circle} />  
+            <FontAwesomeIcon icon={circle} />
+            <FontAwesomeIcon icon={faCircle} />
+          </div>
+        }
+
+      </div>
+
       <br></br>
 
       <h4>Articles</h4>

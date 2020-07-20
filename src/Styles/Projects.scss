@@ -14,5 +14,12 @@
 
 .websites {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  animation-name: website;
+  animation-duration: 1s;
+}
+
+@keyframes website {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
