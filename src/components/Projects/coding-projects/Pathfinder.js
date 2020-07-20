@@ -19,9 +19,8 @@ export default function Pathfinder() {
         <p>
           A path-finding algorithm visualisation tool. Users can choose an algorithm and visualise the algorithm's search for the end node from the start node - traversing through obstacles of the user's choosing. 
         </p>
+        <p>Tech stack: React, Material-UI, CSS, Rails, JavaScript, Axios</p>
       </div>
-
-      <p>Tech stack: React, Material-UI, CSS, Rails, JavaScript, Axios</p>
 
     </div>
   )

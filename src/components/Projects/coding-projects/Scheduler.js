@@ -19,9 +19,6 @@ export default function Scheduler() {
           A scheduling app which allows users to create, modify and delete appointments. Using websockets,
           users can see, in real-time, changes in the schedule
         </p>
-      </div>
-
-      <div className="tech-stack">
         <p>Tech stack: React, JavaScript, Express, Axios, Websockets</p>
       </div>
 
