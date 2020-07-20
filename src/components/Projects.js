@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../Styles/Projects.scss';
+import { faCir } from "@fortawesome/free-brands-svg-icons";
 import Pathfinder from './Projects/coding-projects/Pathfinder';
 import Mapbook from './Projects/coding-projects/Mapbook';
 import Scheduler from './Projects/coding-projects/Scheduler';
@@ -12,6 +13,11 @@ const SCHEDULER = 'scheduler';
 export default function Projects() {
 
   const [projectMode, setProject] = useState(PATHFINDER)
+
+  useEffect(() => {
+    clearInterval();
+    setInterval(slideshow, 10000);
+  })
 
   const slideshow = () => {
     switch (projectMode) {
@@ -28,7 +34,7 @@ export default function Projects() {
   }
 
   return (
-    <div className="Projects" onpageshow={setInterval(slideshow, 10000)}>
+    <div className="Projects">
       <h4>Coding Projects</h4>
 
       <div className="websites">
