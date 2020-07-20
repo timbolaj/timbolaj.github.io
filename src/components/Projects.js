@@ -4,22 +4,16 @@ import Pathfinder from './Projects/coding-projects/Pathfinder';
 import Mapbook from './Projects/coding-projects/Mapbook';
 import Scheduler from './Projects/coding-projects/Scheduler';
 import ToggleMode from './Projects/ToggleMode';
+import { faBreadSlice } from '@fortawesome/free-solid-svg-icons';
 
 export const PATHFINDER = 'pathfinder';
 export const MAPBOOK = 'mapbook';
 export const SCHEDULER = 'scheduler';
 export const ORDER = [PATHFINDER, MAPBOOK, SCHEDULER]
 
-
-//We can make a slideshow with SetInterval!;
-
 export default function Projects() {
 
   const [projectMode, setProject] = useState(PATHFINDER)
-
-  // useEffect(() => {
-  //   setInterval(slideshow, 10000);
-  // })
 
   const slideshow = () => {
     clearInterval();
@@ -37,7 +31,31 @@ export default function Projects() {
   }
 
   const forward = () => {
+    switch (projectMode) {
+      case PATHFINDER:
+        setProject(MAPBOOK);
+        break;
+      case MAPBOOK:
+        setProject(SCHEDULER);
+        break;
+      case SCHEDULER:
+        setProject(PATHFINDER);
+        break;
+    }
+  }
 
+  const back = () => {
+    switch (projectMode) {
+      case PATHFINDER:
+        setProject(SCHEDULER);
+        break;
+      case MAPBOOK:
+        setProject(PATHFINDER);
+        break;
+      case SCHEDULER:
+        setProject(MAPBOOK);
+        break;
+    }
   }
 
   return (
@@ -51,10 +69,8 @@ export default function Projects() {
       </div>
 
       <ToggleMode
-        mapbook={MAPBOOK}
-        pathfinder={PATHFINDER}
-        scheduler={SCHEDULER}
         projectMode={projectMode}
+        setProject={setProject}
       />
 
       <br></br>

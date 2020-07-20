@@ -7,7 +7,7 @@ import { PATHFINDER, MAPBOOK, SCHEDULER } from '../Projects';
 
 export default function ToggleMode(props) {
 
-  const { projectMode } = props;
+  const { projectMode, setProject } = props;
 
   return (
     <div className="placeholder">
@@ -15,23 +15,23 @@ export default function ToggleMode(props) {
         {projectMode === PATHFINDER && 
           <div>
             <FontAwesomeIcon icon={faCircle} />
-            <FontAwesomeIcon icon={circle} />  
-            <FontAwesomeIcon icon={circle} />  
+            <FontAwesomeIcon icon={circle} onClick={() => setProject(MAPBOOK)}/>  
+            <FontAwesomeIcon icon={circle} onClick={() => setProject(SCHEDULER)}/>  
           </div>
         }
         
         {projectMode === MAPBOOK && 
           <div>
-            <FontAwesomeIcon icon={circle} />  
+        <FontAwesomeIcon icon={circle} onClick={() => setProject(PATHFINDER)}/>  
             <FontAwesomeIcon icon={faCircle} />
-            <FontAwesomeIcon icon={circle} />  
+            <FontAwesomeIcon icon={circle} onClick={() => setProject(SCHEDULER)}/>  
           </div>
         }
 
         {projectMode === SCHEDULER && 
           <div>
-            <FontAwesomeIcon icon={circle} />  
-            <FontAwesomeIcon icon={circle} />
+            <FontAwesomeIcon icon={circle} onClick={() => setProject(PATHFINDER)}/>  
+            <FontAwesomeIcon icon={circle} onClick={() => setProject(MAPBOOK)} />
             <FontAwesomeIcon icon={faCircle} />
           </div>
         }
