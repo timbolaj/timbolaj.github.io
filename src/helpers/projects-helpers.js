@@ -1,4 +1,6 @@
-export const forward = (mode) => {
+import { PATHFINDER, MAPBOOK, SCHEDULER } from '../components/Projects';
+
+export const forward = (mode, setProject) => {
   switch (mode) {
     case PATHFINDER:
       setProject(MAPBOOK);
@@ -12,7 +14,7 @@ export const forward = (mode) => {
   }
 }
 
-export const back = (mode) => {
+export const back = (mode, setProject) => {
   switch (mode) {
     case PATHFINDER:
       setProject(SCHEDULER);

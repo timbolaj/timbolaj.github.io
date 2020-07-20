@@ -4,6 +4,8 @@ import Pathfinder from './Projects/coding-projects/Pathfinder';
 import Mapbook from './Projects/coding-projects/Mapbook';
 import Scheduler from './Projects/coding-projects/Scheduler';
 import ToggleMode from './Projects/ToggleMode';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowAltCircleRight, faArrowAltCircleLeft } from '@fortawesome/free-solid-svg-icons'
 import { forward, back } from '../helpers/projects-helpers';
 
 export const PATHFINDER = 'pathfinder';
@@ -20,9 +22,19 @@ export default function Projects() {
       <h4>Coding Projects</h4>
 
       <div className="websites">
+        <FontAwesomeIcon
+          className="toggle-mode-arrows"
+          icon={faArrowAltCircleLeft}
+          onClick={() => back(projectMode, setProject)}
+        />  
         {projectMode === PATHFINDER && <Pathfinder />}
         {projectMode === MAPBOOK && <Mapbook />}
         {projectMode === SCHEDULER && <Scheduler />}
+        <FontAwesomeIcon
+          className="toggle-mode-arrows"
+          icon={faArrowAltCircleRight}
+          onClick={() => forward(projectMode, setProject)}
+        />  
       </div>
 
       <ToggleMode
