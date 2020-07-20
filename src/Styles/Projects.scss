@@ -16,7 +16,12 @@
   display: flex;
   justify-content: center;
   animation-name: website;
-  animation-duration: 1s;
+  animation-duration: 10s;
+}
+
+.project-img {
+  animation-name: website;
+  animation-duration: 2s;
 }
 
 .toggle-mode-arrows {
@@ -25,6 +30,11 @@
 
 .placeholder {
   color: white;
+}
+
+.projects-text {
+  display: flex;
+  justify-content: center;
 }
 
 @keyframes website {

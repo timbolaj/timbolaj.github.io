@@ -11,7 +11,7 @@ export default function Mapbook() {
         <img
           src={mapbook}
           alt="link to mapbook"
-          className="project-img pagination-centered"
+          className="project-img"
         />          
       </a>
 
