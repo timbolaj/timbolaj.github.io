@@ -1,11 +1,18 @@
 import React from 'react';
+import pathfinder from '../../../images/pathfinder.png';
 import '../../../Styles/Project-styles/coding-project-styles/project.scss'
 
 export default function Pathfinder() {
   return (
     <div className="project">
       <div>
-        Gif        
+        <a href="https://react-pathfinder.herokuapp.com/">
+          <img
+            src={pathfinder}
+            alt="pathfinder"
+            className="project-img"
+          />
+        </a>  
       </div>
 
       <div className="project-description">

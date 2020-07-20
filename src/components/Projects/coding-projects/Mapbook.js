@@ -1,12 +1,19 @@
 import React from 'react';
-import '../../../Styles/Project-styles/coding-project-styles/project.scss'
+import '../../../Styles/Project-styles/coding-project-styles/project.scss';
+import mapbook from '../../../images/mapbook.png';
 
 export default function Mapbook() {
   return (
   
     <div className="project">
       <div>
-        Gif        
+        <a href="https://mapbook.herokuapp.com/">
+          <img
+            src={mapbook}
+            alt="link to mapbook"
+            className="project-img"
+          />          
+        </a>
       </div>
 
       <div className="project-description">
