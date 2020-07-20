@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import '../Styles/Projects.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCircle } from '@fortawesome/free-solid-svg-icons'
-import { faCircle as circle } from '@fortawesome/free-regular-svg-icons'
 import Pathfinder from './Projects/coding-projects/Pathfinder';
 import Mapbook from './Projects/coding-projects/Mapbook';
 import Scheduler from './Projects/coding-projects/Scheduler';
+import ToggleMode from './Projects/ToggleMode';
 
-const PATHFINDER = 'pathfinder';
-const MAPBOOK = 'mapbook';
-const SCHEDULER = 'scheduler';
+export const PATHFINDER = 'pathfinder';
+export const MAPBOOK = 'mapbook';
+export const SCHEDULER = 'scheduler';
+export const ORDER = [PATHFINDER, MAPBOOK, SCHEDULER]
+
+
 //We can make a slideshow with SetInterval!;
 
 export default function Projects() {
@@ -35,6 +36,10 @@ export default function Projects() {
     }
   }
 
+  const forward = () => {
+
+  }
+
   return (
     <div className="Projects">
       <h4>Coding Projects</h4>
@@ -45,33 +50,12 @@ export default function Projects() {
         {projectMode === SCHEDULER && <Scheduler />}
       </div>
 
-      <div>
-
-        {projectMode === PATHFINDER && 
-          <div>
-            <FontAwesomeIcon icon={faCircle} />
-            <FontAwesomeIcon icon={circle} />  
-            <FontAwesomeIcon icon={circle} />  
-          </div>
-        }
-        
-        {projectMode === MAPBOOK && 
-          <div>
-            <FontAwesomeIcon icon={circle} />  
-            <FontAwesomeIcon icon={faCircle} />
-            <FontAwesomeIcon icon={circle} />  
-          </div>
-        }
-
-        {projectMode === SCHEDULER && 
-          <div>
-            <FontAwesomeIcon icon={circle} />  
-            <FontAwesomeIcon icon={circle} />
-            <FontAwesomeIcon icon={faCircle} />
-          </div>
-        }
-
-      </div>
+      <ToggleMode
+        mapbook={MAPBOOK}
+        pathfinder={PATHFINDER}
+        scheduler={SCHEDULER}
+        projectMode={projectMode}
+      />
 
       <br></br>
 
