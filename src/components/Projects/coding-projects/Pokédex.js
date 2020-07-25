@@ -1,15 +1,15 @@
 import React from 'react';
-import pokedex from '../../../images/Pokédex-home.png';
+import pokedex from '../../../images/Pokedex-home.png';
 import '../../../Styles/Project-styles/coding-project-styles/project.scss'
 
-export default function Pathfinder() {
+export default function Pokedex() {
   return (
     <div className="project">
       <div>
         <a href="https://github.com/timbolaj/pokedex">
           <img
-            src={pathfinder}
-            alt="pathfinder"
+            src={pokedex}
+            alt="pokedex"
             className="project-img"
           />
         </a>  
