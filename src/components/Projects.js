@@ -39,10 +39,13 @@ export default function Projects() {
         {projectMode === POKEDEX && <Pokedex />}
       </div>
 
-      <ToggleMode
-        projectMode={projectMode}
-        setProject={setProject}
-      />
+      <div className="toggle-mode">
+        <ToggleMode
+          projectMode={projectMode}
+          setProject={setProject}
+        />        
+      </div>
+
 
     </div>
   )
