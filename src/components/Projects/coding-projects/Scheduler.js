@@ -10,6 +10,7 @@ export default function Scheduler() {
           <img
             src={scheduler}
             className="project-img"
+            alt="scheduler"
           />
         </a> 
       </div>

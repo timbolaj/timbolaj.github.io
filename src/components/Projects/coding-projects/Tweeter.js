@@ -10,6 +10,7 @@ export default function Tweeter() {
           <img
             src={tweeter}
             className="project-img"
+            alt="Tweeter"
           />
         </a> 
       </div>

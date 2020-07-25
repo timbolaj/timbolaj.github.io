@@ -5,8 +5,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Summary from './Profile-components/Summary';
 import Skills from './Profile-components/Skills';
 import Button from '@material-ui/core/Button';
-import { faChevronCircleDown } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const SUMMARY = 'Summary';
 const SKILLS = 'Skills';
@@ -19,7 +17,7 @@ export default function Profile() {
     <div className="profile d-flex justify-content-center vertical-center">
 
       <div className="profile-picture">
-        <a id="Profile"><img src={picture} alt="picture"></img></a>
+        <img src={picture} alt="profile-pic"></img>
       </div>
 
       <br></br>
