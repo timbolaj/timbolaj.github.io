@@ -2,6 +2,7 @@ import React from 'react';
 import '../Styles/Head.scss';
 import 'bootstrap/dist/css/bootstrap.css';
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Head() {
@@ -11,6 +12,7 @@ export default function Head() {
       <div className="links col-sm">
         <a href="https://github.com/timbolaj"><FontAwesomeIcon icon={faGithub} size="2x"/></a>
         <a href="https://linkedin.com/in/aaron-timbol-853383107/"><FontAwesomeIcon icon={faLinkedin} size="2x"/></a>
+        <a href="mailto: timbolaj@gmail.com"><FontAwesomeIcon icon={faEnvelope} size="2x"/></a>
       </div>
 
       <div className="Introduction-text">
