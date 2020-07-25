@@ -26,6 +26,7 @@ export default function Head() {
           <p>I love languages, both human and computer.</p>
         </div>
       </div>
+
     </div>
   )
 }
